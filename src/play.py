@@ -22,10 +22,10 @@ def run_the_sync_run():
 
 # run_the_sync_run()
 async def async_run(name):
-    random_int = random.randint(50000, 54304231)
+    random_sleep_time = random.random()
+    
     start_time = time.time()
-    for i in range(0, random_int): # webpage
-        pass
+    await asyncio.sleep(random_sleep_time)
     ellapsed_time = time.time() - start_time
     msg = f"{name} with {random_int} iterations took {ellapsed_time} seconds"
     print(msg)
